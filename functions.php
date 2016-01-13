@@ -39,5 +39,6 @@ add_action( 'after_setup_theme', 'social_menu_theme_setup' );
  */
 function social_menu_theme_scripts() {
 	wp_enqueue_style( 'social-menu-theme-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' );
 }
 add_action( 'wp_enqueue_scripts', 'social_menu_theme_scripts' );

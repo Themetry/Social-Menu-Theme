@@ -28,6 +28,16 @@
 					'container_class' => 'social-icon-font',
 				) );
 			endif;
+
+			if ( has_nav_menu( 'social-svg' ) ) :
+				wp_nav_menu( array(
+					'theme_location'  => 'social-svg',
+					'depth'           => 1,
+					'link_before'     => '<span class="screen-reader-text">',
+					'link_after'      => '</span>',
+					'container_class' => 'social-svg',
+				) );
+			endif;
 		?>
 
 	<?php wp_footer(); ?>

@@ -28,6 +28,7 @@ function social_menu_theme_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'social-icon-font' => esc_html__( 'Social Icon Font Menu', 'social-menu-theme' ),
+		'social-svg' => esc_html__( 'Social SVG Icon Menu', 'social-menu-theme' ),
 	) );
 
 }
@@ -40,5 +41,6 @@ add_action( 'after_setup_theme', 'social_menu_theme_setup' );
 function social_menu_theme_scripts() {
 	wp_enqueue_style( 'social-menu-theme-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' );
+	wp_enqueue_script( 'main', get_template_directory_uri() . '/main.js', array( 'jquery' ), '', true );
 }
 add_action( 'wp_enqueue_scripts', 'social_menu_theme_scripts' );

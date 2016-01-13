@@ -58,3 +58,8 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 .social-icon-font a[href*='twitter.com']:before {
     content: '\f099';
 }
+
+.social-svg svg {
+	height: auto;
+	max-width: 50px;
+}

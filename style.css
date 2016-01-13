@@ -41,3 +41,20 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 	width: auto;
 	z-index: 100000; /* Above WP toolbar */
 }
+
+.social-icon-font a {
+	text-decoration: none;
+}
+
+.social-icon-font a:before {
+	content: "\f1e0";
+	font-family: FontAwesome;
+}
+
+.social-icon-font a[href*='facebook.com']:before {
+    content: '\f230';
+}
+
+.social-icon-font a[href*='twitter.com']:before {
+    content: '\f099';
+}
